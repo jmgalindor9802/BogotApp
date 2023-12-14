@@ -12,8 +12,8 @@ class MenuActivity:AppCompatActivity(){
 
     }
 
-    fun initRecyclerView(){
-     val recyclerView=findViewById<RecyclerView>(R.id.recycler)
+    private fun initRecyclerView(){
+     val recyclerView=findViewById<RecyclerView>(R.id.recyclerSitio)
         recyclerView.layoutManager=LinearLayoutManager(this)
         recyclerView.adapter=SitioAdapter(SitioProvider.SitiosList)
     }
