@@ -1,3 +1,7 @@
 package com.example.bogotapp
 
-class Sitio (val nombre:String, val foto:String, val desc:String)
+data class Sitio (
+    val nombre:String,
+    val foto:String,
+    val desc:String
+)
