@@ -11,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Thread.sleep(2000)
         screenSplash.setKeepVisibleCondition{true}
-        val intent=Intent(this, MenuActivity::class.java)
+        val intent = Intent(this, MenuActivity::class.java)
         startActivity(intent)
-
+        finish()
     }
 }

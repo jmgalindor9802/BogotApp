@@ -12,19 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BogotApp"
         tools:targetApi="31">
+
+        <activity
+            android:name=".SitioAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Sitio"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SitioProvider"
+            android:exported="false" />
+        <activity
+            android:name=".SitioViewHolder"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.App.Starting"
-            >
-
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity" />
+
     </application>
 
 </manifest>
